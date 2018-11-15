@@ -20,7 +20,6 @@ const App = () => {
       <ApprovalCard>
         <CommentDetail author="Jane" timeAgo="Yesterday at 7:38pm" image={faker.image.avatar()}  post="Go to hell." />
       </ApprovalCard>
-      
     </div>
   );
 };
