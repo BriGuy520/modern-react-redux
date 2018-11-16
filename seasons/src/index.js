@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import Spinner from './Spinner';
 
 
 class App extends Component {
@@ -21,10 +22,7 @@ class App extends Component {
     console.log("My component was just updated - it rerendered");
   }
 
-
-  // React says we have to define render!!!
-  render(){
-
+  renderContent(){
     if(this.state.errorMessage && !this.state.lat){
       return <div>Error: {this.state.errorMessage}</div>
     }
@@ -33,8 +31,17 @@ class App extends Component {
       return <SeasonDisplay lat={this.state.lat} />
     }
 
-    return <div>Loading...</div>
+    return <Spinner  />;
+  }
 
+
+  // React says we have to define render!!!
+  render(){
+    return (
+      <div className="border red">
+        {this.renderContent()}
+      </div>
+    )
   }
 }
 
