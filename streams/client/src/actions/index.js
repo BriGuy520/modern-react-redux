@@ -11,9 +11,10 @@ import {
 } from './types';
 
 
-export const signIn = () => {
+export const signIn = (userId) => {
   return {
-    type: SIGN_IN
+    type: SIGN_IN,
+    payload: userId
   };
 };
 
@@ -23,16 +24,17 @@ export const signOut = () => {
   }
 }
 
-export const createStream = formValues => async dispatch => {
- const response = await streams.post('/streams', formValues);
+export const createStream = formValues => async (dispatch, getState) => {
+  const { userId } = getState().auth;
+  const response = await streams.post('/streams', { ...formValues, userId });
 
- dispatch({ type: CREATE_STREAM, payload: response.date });
+  dispatch({ type: CREATE_STREAM, payload: response.data });
 }
 
 export const fetchStreams = () => async dispatch => {
   const response = await streams.get('/streams');
 
-  dispatch( { type: FETCH_STREAMS, payload: response.date });
+  dispatch({ type: FETCH_STREAMS, payload: response.data });
 }
 
 export const fetchStream = (id) => async dispatch => {

@@ -9,6 +9,38 @@
       "title": "Other Stream",
       "description": "Here's another string.",
       "id": 2
+    },
+    {
+      "title": "This is an even newer Stream",
+      "description": "It's the truth",
+      "id": 3
+    },
+    {
+      "title": "This is an even newer Stream",
+      "description": "It's the truth",
+      "id": 4
+    },
+    {
+      "title": "Yet another Stream",
+      "description": "This was made by me.",
+      "id": 5
+    },
+    {
+      "title": "fasdfaf",
+      "description": "dfasdfasdf",
+      "id": 6
+    },
+    {
+      "title": "A stream that works correctly",
+      "description": "Hooray.",
+      "userId": "117998043595459517499",
+      "id": 7
+    },
+    {
+      "title": "A stream that works correctly",
+      "description": "Hooray.",
+      "userId": "117998043595459517499",
+      "id": 8
     }
   ]
 }
