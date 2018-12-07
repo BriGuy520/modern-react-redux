@@ -7,27 +7,16 @@
       "id": 1
     },
     {
-      "title": "A stream that works correctly",
-      "description": "Hooray.",
-      "userId": "117998043595459517499",
-      "id": 2
-    },
-    {
-      "title": "This stream title was changed",
-      "description": "It sure was",
-      "userId": "117998043595459517499",
-      "id": 3
-    },
-    {
-      "title": "Programmatic Navigation",
-      "description": "This has been changed successfully.",
-      "id": 4
-    },
-    {
       "title": "This is a form",
       "description": "Watch the refactor work it's magic.",
       "userId": "117998043595459517499",
       "id": 5
+    },
+    {
+      "title": "This has been a very good day.",
+      "description": "Yes it has",
+      "userId": "117998043595459517499",
+      "id": 6
     }
   ]
 }
